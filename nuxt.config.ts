@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss'],
-    rootDir: '/rootDir'
+    runtimeConfig: {
+        "app": {
+          "baseURL": "/betatube",
+          "buildAssetsDir": "/betatube/_nuxt/",
+        }
+      }
 })
